@@ -39,8 +39,13 @@ apt-get -y install vim
 
 #Install Zotero
 add-apt-repository ppa:smathot/cogscinl
-apt-get update
+apt-get -y update
 apt-get -y install zotero-standalone
+
+#Install grive
+add-apt-resository ppa:nilarimogard/webupd8
+apt-get -y update
+apt-get -y install grive
 
 #Upgrade all the things
 apt-get -y update
