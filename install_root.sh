@@ -41,6 +41,11 @@ apt-get -y install git-svn
 #Install vim
 apt-get -y install vim
 
+#Install Zotero
+add-apt-repository ppa:smathot/cogscinl
+apt-get update
+apt-get -y install zotero-standalone
+
 #Get ROS repos
 mkdir -p /home/ed/ros/dev_stacks
 cd /home/ed/ros/dev_stacks
