@@ -3,10 +3,6 @@
 #Install git
 apt-get -y install git
 
-#Get dotfiles
-git clone git@github.com:evenator/dotfiles
-cp -r dotfiles/* .
-
 #Install ROS
 sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
 wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
@@ -45,20 +41,6 @@ apt-get -y install vim
 add-apt-repository ppa:smathot/cogscinl
 apt-get update
 apt-get -y install zotero-standalone
-
-#Get ROS repos
-mkdir -p /home/ed/ros/dev_stacks
-cd /home/ed/ros/dev_stacks
-git clone git@github.com:evenator/cwru-ros-pkg.git
-cd cwru-ros-pkg
-git remote add central git@github.com:cwru-robotics/cwru-ros-pkg.git
-cd ..
-git clone git@github.com:evenator/precision_navigation
-git clone git@github.com:evenator/swri-ros-pkg
-
-#Get masters work
-cd /home/ed
-git clone git@github.com:evenator/masters
 
 #Upgrade all the things
 apt-get -y update
