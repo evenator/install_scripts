@@ -16,7 +16,4 @@ git clone git@github.com:evenator/masters
 #Get dotfiles
 cd ~
 git clone git@github.com:evenator/dotfiles
-for file in dotfiles/*
-do
- ln -s "$file" "~/$(basename($file))"
-done
+ln -s dotfiles/* .
