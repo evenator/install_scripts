@@ -51,3 +51,9 @@ apt-get -y install grive
 apt-get -y update
 apt-get -y upgrade
 apt-get -y autoremove
+
+#gedit YAML hilighter
+cd /tmp && svn checkout http://masood.googlecode.com/svn/trunk/yaml-language-spec/
+cd yaml-language-spec/
+cp yaml.lang /usr/share/gtksourceview-3.0/language-specs/
+chmod 644 /usr/share/gtksourceview-3.0/language-specs/yaml.lang
